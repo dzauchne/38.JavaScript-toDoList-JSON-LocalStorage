@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
+
+.colorful-background {
+    padding:50px;
+    background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.container-toDoList {
+    max-width: 700px;
+    min-height: 500px;
+    margin: auto;
+    background-color: white;
+    border: none;
+    border-radius: 2%;
+    padding: 50px;
+    display: inline-block;
+}
+.title{padding: 15px;
+}
+.title h1{
+    font: 700 35px Roboto;
+    color: #6100ff ;
+}
+.plus{
+    margin-top:20px ;
+    width: 70px;
+    border: 1px solid greenyellow;
+    border-radius: 10%;
+    background-color:#fff500; 
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.enter-field {
+    width: 78%;
+    padding: 10px 0 10px 20px;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    cursor: auto;
+}
+
+.none{display: none!important;}
+
+.add-button {
+    margin-left:20px ;
+    color: black;
+    font: 400 15px Roboto;
+    opacity: 1;
+    background-color: #6100ff;
+    padding: 10px 15px;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    color: black;
+}
+
+.task-categories {
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+
+}
+
+.all__task,
+.active__task,
+.finished__task {
+    color: rgb(110, 108, 108);
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.all__task:active,
+.active__task:active,
+.finished__task:active {
+    text-decoration: underline;
+    color: #fff500;;
+}
+
+.all__task {
+    margin-left: 0;
+}
+
+.tasklist {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.task {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    color: rgb(94, 89, 89);
+    font: 400 15px Roboto;
+    background-color: rgb(243, 242, 242);
+    border: none;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.to__check {
+    margin-right: 7px; 
+}
+
+.line{
+    text-decoration:line-through;
+}
+
+.dlt{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 3px 3px 3px 80px;
+
+}
+
+.text{
+    font: 400 17px Roboto;
+    color: #6100ff;
+    padding-left:10px;
+
+}
+
+
+.date select {
+    width: 32%;
+    display: inline;
+    padding: 10px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(./images/arrow-down-sign-to-navigate.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 90%;
+    background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+    border: solid 1px rgb(156, 155, 155);
+    border-radius: 5px;
+    color: black;
+    font-family: Roboto;
+    font-size: large;
+    text-align: left;
+    outline: none;
+}
